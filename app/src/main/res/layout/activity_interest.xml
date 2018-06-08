@@ -5,9 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".DateQuiz"
     android:gravity="center"
-    android:id="@+id/dateQuiz"
+    android:id="@+id/dateQuiz_interest"
     android:orientation="vertical">
-
-
 
 </LinearLayout>

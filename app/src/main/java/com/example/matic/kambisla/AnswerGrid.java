@@ -22,18 +22,18 @@ class AnswerGrid extends GridLayout{
         setRowCount(answers.length / 3 + 1);
         for (String answer :
                 answers) {
-            CardView cardView = new CardView(context);
+            AnswerCard answerCard = new AnswerCard(context);
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(300, 300);
             params.setMargins(2,2,2,2);
-            cardView.setLayoutParams(params);
+            answerCard.setLayoutParams(params);
 
             TextView answerView = new TextView(context);
             answerView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
             answerView.setText(answer);
             answerView.setGravity(Gravity.CENTER);
-            cardView.addView(answerView);
+            answerCard.addView(answerView);
 
-            addView(cardView);
+            addView(answerCard);
         }
     }
 }

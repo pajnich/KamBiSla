@@ -13,7 +13,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:id="@+id/funList">
+            android:id="@+id/funList"
+            android:background="@color/cardview_light_background">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -400,7 +401,7 @@
                         android:layout_marginEnd="10dp"
                         android:background="@color/cardview_light_background"
                         android:gravity="center"
-                        android:text="Park Tivoli (4 km)"
+                        android:text="Park Tivoli (2.9 km)"
                         android:textColor="@color/colorPrimary" />
 
                     <TextView
@@ -451,7 +452,7 @@
                         android:layout_marginEnd="10dp"
                         android:background="@color/cardview_light_background"
                         android:gravity="center"
-                        android:text="Kino Bežigrad (2 km)"
+                        android:text="Kino Bežigrad (1.5 km)"
                         android:textColor="@color/colorPrimary" />
 
                     <TextView
@@ -502,7 +503,7 @@
                         android:layout_marginEnd="10dp"
                         android:background="@color/cardview_light_background"
                         android:gravity="center"
-                        android:text="Slovenčeva cesta (3 km)"
+                        android:text="Slovenčeva cesta (1.8 km)"
                         android:textColor="@color/colorPrimary" />
 
                     <TextView
@@ -553,7 +554,7 @@
                         android:layout_marginEnd="10dp"
                         android:background="@color/cardview_light_background"
                         android:gravity="center"
-                        android:text="Park Tivoli (4 km)"
+                        android:text="Park Tivoli (2.9 km)"
                         android:textColor="@color/colorPrimary" />
 
                     <TextView

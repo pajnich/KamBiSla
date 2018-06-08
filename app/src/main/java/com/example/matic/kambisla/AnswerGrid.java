@@ -1,6 +1,9 @@
 package com.example.matic.kambisla;
 
 import android.content.Context;
+import android.support.v7.widget.CardView;
+import android.view.Gravity;
+import android.view.ViewGroup;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -19,10 +22,18 @@ class AnswerGrid extends GridLayout{
         setRowCount(answers.length / 3 + 1);
         for (String answer :
                 answers) {
+            CardView cardView = new CardView(context);
+            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(300, 300);
+            params.setMargins(2,2,2,2);
+            cardView.setLayoutParams(params);
+
             TextView answerView = new TextView(context);
-            answerView.setLayoutParams(new LinearLayout.LayoutParams(200, 100));
+            answerView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
             answerView.setText(answer);
-            addView(answerView);
+            answerView.setGravity(Gravity.CENTER);
+            cardView.addView(answerView);
+
+            addView(cardView);
         }
     }
 }

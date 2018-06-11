@@ -23,9 +23,6 @@ class AnswerGrid extends GridLayout{
         for (String answer :
                 answers) {
             AnswerCard answerCard = new AnswerCard(context);
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(300, 300);
-            params.setMargins(2,2,2,2);
-            answerCard.setLayoutParams(params);
 
             TextView answerView = new TextView(context);
             answerView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));

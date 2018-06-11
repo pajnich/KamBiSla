@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.LinearLayout;
 
 class AnswerCard extends CardView{
 	private boolean selected;
@@ -23,5 +24,9 @@ class AnswerCard extends CardView{
 				}
 			}
 		});
+		setCardElevation(2);
+		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(200, 200);
+		params.setMargins(2,2,2,2);
+		setLayoutParams(params);
 	}
 }

@@ -16,7 +16,7 @@ class AnswerCard extends CardView{
 			@Override
 			public void onClick(View view) {
 				if(!selected){
-					setBackgroundColor(Color.LTGRAY);
+					setBackgroundColor(Color.parseColor("#42A5F5"));
 					selected = true;
 				}else{
 					setBackgroundColor(Color.WHITE);

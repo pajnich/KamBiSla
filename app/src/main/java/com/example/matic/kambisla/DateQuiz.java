@@ -1,6 +1,7 @@
 package com.example.matic.kambisla;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
@@ -64,6 +65,7 @@ public class DateQuiz extends AppCompatActivity {
         Button nextButton = new Button(this);
         nextButton.setLayoutParams(new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.MATCH_PARENT, 1));
         nextButton.setText("NAPREJ");
+        nextButton.setBackgroundColor(Color.parseColor("#42A5F5"));
         buttonRow.addView(nextButton);
 
         nextButton.setOnClickListener(new View.OnClickListener() {

@@ -12,6 +12,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     static class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
         FunCardView cardView;
+
         ViewHolder(FunCardView v) {
             super(v);
             cardView = v;

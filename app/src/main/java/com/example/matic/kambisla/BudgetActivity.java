@@ -8,18 +8,18 @@ import android.widget.LinearLayout;
 
 public class BudgetActivity extends AppCompatActivity {
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_budget);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_budget);
 
-		LinearLayout linearLayout = findViewById(R.id.budget);
-		linearLayout.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				Intent intent = new Intent(view.getContext(), StartLocationActivity.class);
-				startActivity(intent);
-			}
-		});
-	}
+        LinearLayout linearLayout = findViewById(R.id.budget);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), StartLocationActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
 }

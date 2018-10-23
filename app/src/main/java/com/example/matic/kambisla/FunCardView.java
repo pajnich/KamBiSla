@@ -10,8 +10,6 @@ import android.widget.TextView;
 class FunCardView extends CardView {
 
     TextView name;
-    TextView location;
-    TextView operatingHours;
     ImageView image;
 
     public FunCardView(@NonNull Context context) {

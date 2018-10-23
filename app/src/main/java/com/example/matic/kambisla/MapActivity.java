@@ -15,7 +15,7 @@ public class MapActivity extends AppCompatActivity {
         String eventName = getIntent().getStringExtra("eventName");
 
         ImageView map = findViewById(R.id.map);
-        switch (eventName){
+        switch (eventName) {
             case "Kavarna Kapital":
                 map.setImageResource(R.drawable.ef_kavarna);
                 break;

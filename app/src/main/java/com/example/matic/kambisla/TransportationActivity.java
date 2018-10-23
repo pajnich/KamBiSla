@@ -8,19 +8,19 @@ import android.widget.LinearLayout;
 
 public class TransportationActivity extends AppCompatActivity {
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_transportation);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_transportation);
 
-		LinearLayout linearLayout = findViewById(R.id.transportation);
-		linearLayout.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				Intent intent = new Intent(view.getContext(), BudgetActivity.class);
-				startActivity(intent);
-			}
-		});
+        LinearLayout linearLayout = findViewById(R.id.transportation);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), BudgetActivity.class);
+                startActivity(intent);
+            }
+        });
 
-	}
+    }
 }

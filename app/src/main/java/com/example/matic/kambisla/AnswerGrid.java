@@ -8,7 +8,7 @@ import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-class AnswerGrid extends GridLayout{
+class AnswerGrid extends GridLayout {
     Context context;
 
     public AnswerGrid(Context context) {
